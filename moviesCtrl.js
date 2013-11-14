@@ -1,5 +1,5 @@
 theaterApp.controller("MoviesCtrl", function ($scope, $http){
-    $http.get("/js/data/movies.json")
+    $http.get("movies.json")
         .then(function(results){
             //Success;
             console.log("Success: " + results.status);
